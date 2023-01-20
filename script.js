@@ -35,3 +35,9 @@ function desencriptar(){
     document.getElementById("cajadetexto").style.display="block";
     document.getElementById("cajadetexto").innerHTML= txtcifrado;
 }
+function copiar(){
+    var textocopiado = document.getElementById("cajadetexto")
+    textocopiado.select()
+    document.execCommand("copy")    
+    alert("Texto Copiado!")
+}

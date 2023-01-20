@@ -6,11 +6,11 @@ body{background-color: #EFF1FA;}
 
 #entradadetexto{outline: none;background-color: #EFF1FA;border: 0;position:absolute;width: 577px;height: 48px;left: 240px;top: 200px; font-family:sans-serif;font-style: normal;font-size: 25px;line-height: 150%;}
 
-#contenedorderecho{border:solid;border-color:white;position: relative;list-style: none;background-color: white;width: 400px;height: 500px;float: right;border-radius: 35px;bottom: 70px;left: -175px;}
+#contenedorderecho{border:solid;border-color:white;position: absolute;background-color: white;width: 450px;height: 500px;float: right;border-radius: 35px;bottom: 70px;left: 250px;}
 
 #contenedorderecho:hover{border-color: #0A3871;transition:700ms;}
 
-#cajadetexto{display:none;outline: none;border: none;position: absolute;bottom: 150px;left:25px;}
+#cajadetexto{display:none;outline: none;border: none;position: absolute;bottom: 150px;left: 25px;}
 
 textarea{font-size: 25px !important;color: #0A3871;resize: none;}
 
@@ -32,14 +32,28 @@ textarea{font-size: 25px !important;color: #0A3871;resize: none;}
 
 .boton:hover{transition: 300ms;transform:scale(0.9);text-decoration: underline;border-color:orange;}
 
-#btncopiar{margin-left: 170px;margin-top: 45px;display: none;font-family: sans-serif;font-style: oblique;bottom: 100px;position: absolute;}
- 
-@media (max-width: 480px){
+#btncopiar{position: absolute;left: 750px;margin-left: 150px;display: none;font-family: sans-serif;font-style: oblique;}
+
+@media (min-width: 480px){
     #entradadetexto{left: 40px;bottom: 100px;}
     #cajaderequisitos{width: 80%;;margin-left: 10px;margin-top: 30px;}
-    .boton{position: relative;width: 200px;bottom: 900px;left: 30px;}
-    #contenedorderecho{margin-top: 600px;width: 300px;float: left;left: 90px;}
-    #btncopiar{margin-top:600px;margin-left: 120px;top: 600px;}
+    .boton{position: relative;width: 200px;bottom: 100px;left: 30px;}
+    #contenedorderecho{position:absolute;margin-top:500px;width: 300px;float: left;margin-left: 495px;left: -395px;}
+    #btncopiar{margin-top:350px;left:5px;top: 600px;}
     .muñeco{width: 250px;;}
     #cajadetexto{left: 5px;top: 25px;}
-    }
+}
+@media (max-width:1024px){
+    body{width: 100px;}
+    #entradadetexto{left: 30px;}
+    #cajaderequisitos{width: 300px;}
+    #contenedorderecho{top:10px;}
+    .boton{height: 50px;}
+    #btncopiar{top: 500px;right: 250px;}
+}
+
+@media(min-width:1350px){
+    #contenedorderecho{margin-left:1200px;}
+    #btncopiar{left: 710px;bottom:300px;margin-top: -125px;}
+}
+
