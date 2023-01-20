@@ -1,41 +1,45 @@
 body{background-color: #EFF1FA;}
 
-.logo{margin: 40px 1324px 40px 84px;}
+.logo{margin: 40px 40px 20px;}
 
 #ingresodetexto{background-color: none;}
 
-#entradadetexto{outline: none;background-color: #EFF1FA;border: 0;position:absolute;width: 577px;height: 48px;left: 240px;top: 268px; font-family:sans-serif;font-style: normal;font-size: 25px;line-height: 150%;}
+#entradadetexto{outline: none;background-color: #EFF1FA;border: 0;position:absolute;width: 577px;height: 48px;left: 240px;top: 200px; font-family:sans-serif;font-style: normal;font-size: 25px;line-height: 150%;}
 
-#contenedorderecho{border:solid;border-color:white;position: relative;list-style: none;left: -20px;background-color: white;width: 400px;height: 600px;float: right;border-radius: 35px;bottom: 70px;}
+#contenedorderecho{border:solid;border-color:white;position: relative;list-style: none;background-color: white;width: 400px;height: 500px;float: right;border-radius: 35px;bottom: 70px;left: -175px;}
 
 #contenedorderecho:hover{border-color: #0A3871;transition:700ms;}
 
-#cajadetexto{outline: none;border: none;position: absolute;bottom: 400px;left:950px;display: none;}
+#cajadetexto{display:none;outline: none;border: none;position: absolute;bottom: 150px;left:25px;}
 
-.muñeco{margin-top: 100px;padding:25px;}
+textarea{font-size: 25px !important;color: #0A3871;resize: none;}
+
+.muñeco{margin-top: 25px;padding:25px;}
 
 .descripcion1{text-align: center;font-weight:800;font-size: 25px;font-style: normal;font-family: sans-serif;line-height: 30px;color: #0A3871;}
 
 .descripcion2{font-style: normal;font-family:Georgia, 'Times New Roman', Times, serif;text-align: center;line-height: 30px;font-weight: bold;}
 
-#cajaderequisitos{position:absolute;margin-top:20em;margin-left: 20px;}
+#cajaderequisitos{position:absolute;margin-top:11em;margin-left: 20px;}
 
 .vector{margin-left:25px;float:left;}
 
 .textorequisitos{margin-left: 50px;font-weight: bold;color: grey;}
 
-#botones{margin-top: 350px;margin-left: 85px;}
+#botones{margin-top: 250px;margin-left: 85px;}
 
 .boton{width: 250px;height: 80px; background-color: #0A3871;color: #D8DFE8;border: solid;border-color: #0A3871;border-radius: 25px;margin: 25px;font-size: 20px; font-family: sans-serif;font-style: oblique;}
 
 .boton:hover{transition: 300ms;transform:scale(0.9);text-decoration: underline;border-color:orange;}
 
-@media screen and(max-width:480px){ 
-
-
-    
-}
-
-
-
-
+#btncopiar{margin-left: 170px;margin-top: 45px;display: none;font-family: sans-serif;font-style: oblique;bottom: 100px;position: absolute;}
+ 
+@media (max-width: 480px){
+    #entradadetexto{left: 40px;bottom: 100px;}
+    #cajaderequisitos{width: 80%;;margin-left: 10px;margin-top: 30px;}
+    .boton{position: relative;width: 200px;bottom: 900px;left: 30px;}
+    #contenedorderecho{margin-top: 600px;width: 300px;float: left;left: 90px;}
+    #btncopiar{margin-top:600px;margin-left: 120px;top: 600px;}
+    .muñeco{width: 250px;;}
+    #cajadetexto{left: 5px;top: 25px;}
+    }

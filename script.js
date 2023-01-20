@@ -2,17 +2,19 @@
 var campodetexto = document.getElementById("entradadetexto");
 var boton1 = document.querySelector(btnencriptar);
 var boton2 = document.querySelector(btndesencriptar);
+var boton3 = document.querySelector(btncopiar)
 var resultado = document.querySelector(cajadetexto);
 
 function encriptar(){
     borrarcontenido();
     let texto = campodetexto.value.toLowerCase();
-    var txtcifrado = texto.replace(/a/,"ai");
-    var txtcifrado = txtcifrado.replace(/e/,"enter");
-    var txtcifrado = txtcifrado.replace(/i/,"imes");
-    var txtcifrado = txtcifrado.replace(/o/,"ober");
-    var txtcifrado = txtcifrado.replace(/u/,"ufat");
+    var txtcifrado = texto.replace(/a/g,"ai");
+    var txtcifrado = txtcifrado.replace(/e/g,"enter");
+    var txtcifrado = txtcifrado.replace(/i/g,"imes");
+    var txtcifrado = txtcifrado.replace(/o/g,"ober");
+    var txtcifrado = txtcifrado.replace(/u/g,"ufat");
     
+    document.getElementById("btncopiar").style.display="inline-block";
     document.getElementById("cajadetexto").style.display="block";
     document.getElementById("cajadetexto").innerHTML= txtcifrado;
 }
