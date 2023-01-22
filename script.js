@@ -8,11 +8,11 @@ var resultado = document.querySelector(cajadetexto);
 function encriptar(){
     borrarcontenido();
     let texto = campodetexto.value.toLowerCase();
-    var txtcifrado = texto.replace(/a/g,"ai");
-    var txtcifrado = txtcifrado.replace(/e/g,"enter");
-    var txtcifrado = txtcifrado.replace(/i/g,"imes");
-    var txtcifrado = txtcifrado.replace(/o/g,"ober");
-    var txtcifrado = txtcifrado.replace(/u/g,"ufat");
+    var txtcifrado = texto.replaceAll("e","enter");
+    var txtcifrado = txtcifrado.replaceAll("i","imes");
+    var txtcifrado = txtcifrado.replaceAll("a","ai");
+    var txtcifrado = txtcifrado.replaceAll("o","ober");
+    var txtcifrado = txtcifrado.replaceAll("u","ufat");
     
     document.getElementById("btncopiar").style.display="inline-block";
     document.getElementById("cajadetexto").style.display="block";
