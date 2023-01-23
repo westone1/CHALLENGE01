@@ -1,10 +1,10 @@
-body{background-color: #EFF1FA;}
+body{background-color:#F3F5FC;} 
 
 .logo{margin: 40px 40px 20px;}
 
 #ingresodetexto{background-color: none;}
 
-#entradadetexto{outline: none;background-color: #EFF1FA;border: 0;position:absolute;width: 577px;height: 48px;left: 240px;top: 200px; font-family:sans-serif;font-style: normal;font-size: 25px;line-height: 150%;}
+#entradadetexto{outline: none;background-color: #F3F5FC;border: 0;position:absolute;width: 577px;height: 48px;left: 240px;top: 200px; font-family:sans-serif;font-style: normal;font-size: 25px;line-height: 150%;}
 
 #contenedorderecho{border:solid;border-color:white;position: absolute;background-color: white;width: 450px;height: 500px;float: right;border-radius: 35px;bottom: 70px;left: 250px;}
 
@@ -30,9 +30,10 @@ textarea{font-size: 25px !important;color: #0A3871;resize: none;}
 
 .boton{width: 250px;height: 80px; background-color: #0A3871;color: #D8DFE8;border: solid;border-color: #0A3871;border-radius: 25px;margin: 25px;font-size: 20px; font-family: sans-serif;font-style: oblique;}
 
-.boton:hover{transition: 300ms;transform:scale(0.9);text-decoration: underline;border-color:orange;}
+.boton:hover{cursor: pointer;transition: 300ms;transform:scale(0.9);text-decoration: underline;border-color:orange;}
 
 #btncopiar{position: absolute;left: 750px;margin-left: 150px;display: none;font-family: sans-serif;font-style: oblique;}
+
 
 @media screen and (max-width:1800px){
     #contenedorderecho{margin-left:600px;}
@@ -50,7 +51,7 @@ textarea{font-size: 25px !important;color: #0A3871;resize: none;}
     #entradadetexto{left: 40px;bottom: 100px;}
     #cajaderequisitos{width: 80%;;margin-left: -250px;margin-top: 200px;}
     .boton{position: relative;width: 200px;bottom: 100px;left: -200px;}
-    #contenedorderecho{position:absolute;left: -250px;}
+    #contenedorderecho{position:absolute;left: -200px;width: 350px;}
     #btncopiar{margin-top:350px;left:550px;top: 600px;}
     .muñeco{width: 250px;;}
     #cajadetexto{left: 5px;top: 25px;}

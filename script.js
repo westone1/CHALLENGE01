@@ -6,7 +6,7 @@ var boton3 = document.querySelector(btncopiar)
 var resultado = document.querySelector(cajadetexto);
 
 function encriptar(){
-    borrarcontenido();
+    borrarcontenido()
     let texto = campodetexto.value.toLowerCase();
     var txtcifrado = texto.replaceAll("e","enter");
     var txtcifrado = txtcifrado.replaceAll("i","imes");
@@ -17,7 +17,8 @@ function encriptar(){
     document.getElementById("btncopiar").style.display="inline-block";
     document.getElementById("cajadetexto").style.display="block";
     document.getElementById("cajadetexto").innerHTML= txtcifrado;
-}
+    }
+
 function borrarcontenido(){
     document.getElementById("persona").style.display="none";
     document.getElementById("text001").style.display="none";
